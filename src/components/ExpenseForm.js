@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
 
 
 export default class ExpenseForm extends React.Component{
@@ -57,11 +56,11 @@ export default class ExpenseForm extends React.Component{
             this.props.onSubmit({
                 description:this.state.description,
                 amount: Number(this.state.amount)*100,
-                createdAt: this.state.createdAt.valueOf(),
+                createdAt: this.state.createdAt.valueOf(), //valueof gets the unix time of the date
                 note: this.state.note
             });
 
-        }
+        } 
     };
 
 
