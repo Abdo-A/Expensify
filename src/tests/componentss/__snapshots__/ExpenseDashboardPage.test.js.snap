@@ -2,42 +2,7 @@
 
 exports[`should render ExpenseDashboardPage correctly 1`] = `
 <div>
-  <h1>
-    Viewing 
-     
-    expenses
-     totalling 
-  </h1>
-  <Connect(ExpenseListFilters) />
-  <Connect(ExpenseList) />
-</div>
-`;
-
-exports[`should view a more than one expense correctly 1`] = `
-<div>
-  <h1>
-    Viewing 
-    2
-     
-    expenses
-     totalling 
-    $94.34
-  </h1>
-  <Connect(ExpenseListFilters) />
-  <Connect(ExpenseList) />
-</div>
-`;
-
-exports[`should view a single expense correctly 1`] = `
-<div>
-  <h1>
-    Viewing 
-    1
-     
-    expense
-     totalling 
-    $94.34
-  </h1>
+  <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>
