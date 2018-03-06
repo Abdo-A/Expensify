@@ -13,14 +13,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 const store=configureStore(); //this will give us access to all the store properties
 
-store.dispatch(addExpense({description:'Water Bill', createdAt: 33, amount:4500}));
-store.dispatch(addExpense({description:'Gas Bill', createdAt: 1000, amount:1000}));
-store.dispatch(addExpense({description:'Rent', createdAt: 20, amount:109500}));
-
-const state=store.getState();
-console.log(getVisibleExpenses(state.expenses, state.filters));
-
-//console.log(store.getState());
 
 //The Provider component automatically passes the store to the components
 const jsx=(
